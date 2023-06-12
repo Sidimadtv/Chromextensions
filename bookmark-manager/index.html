@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="placeholder-loading.min.css">
+    <link rel="stylesheet" type="text/css" href="style.min.css">
+
+ <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&family=Reem+Kufi:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body style="font-family: 'Chakra Petch', sans-serif;">
+    <div class="container">
+        <div class="btn-container">
+            <div class="btn-holder">
+                <button style="text-decoration: #a00 underline;font-family: 'Chakra Petch', sans-serif;" type="button" class="btn btn-all" id="allBtn">All</button>
+                <button style="text-decoration: #a00 underline;font-family: 'Chakra Petch', sans-serif;" type="button" class="btn btn-recent" id="recentBtn">Recent</button>
+                <input style="border-radius: 5px;border: 2px solid #a00;font-family: 'Chakra Petch', sans-serif;" type="text" id="searchTxtb" class="search-keyword" placeholder="Search For a Bookmark"/>
+                <button style="text-decoration: #a00 underline;font-family: 'Chakra Petch', sans-serif;" type="button" class="btn btn-search" id="searchBtn">Search</button>
+                <a style="text-decoration: #a00 underline;font-family: 'Chakra Petch', sans-serif;" href="#" class="download-bookmark-csv" id="downloadBookmarkCsv" title="Download a Backup">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#009d05" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <circle cx="12" cy="12" r="10"/><path d="M16 12l-4 4-4-4M12 8v7"/></svg>
+                </a>
+            </div>
+            <div class="info-holder" id="infoHolder"></div>
+            <div style="clear: both;"></div>
+        </div>
+        <div class="result-container">
+            <table class="bookmark-table">
+                <thead>
+                    <tr>
+                        <th>List Of Your Bookmarks</th>
+                        <th style="width: 75px;">Created On</th>
+                    </tr>
+                </thead>
+                <tbody id="result">
+
+                </tbody>
+            </table>
+        </div>
+        <div style="width: 100%; height: 25px;"></div>
+    </div>
+    <script src="bookmark-script.min.js"></script>
+
+</body>
+</html>
